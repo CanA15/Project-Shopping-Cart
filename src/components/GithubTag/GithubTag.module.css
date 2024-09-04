@@ -1,0 +1,18 @@
+.githubProfile {
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  z-index: 100;
+}
+
+.githubProfile img {
+  width: 4vw;
+  height: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .githubProfile img {
+    width: 8vw;
+    height: auto;
+  }
+}
