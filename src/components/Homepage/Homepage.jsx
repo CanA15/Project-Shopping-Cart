@@ -6,7 +6,7 @@ function Homepage() {
     <>
       <div>
         <div className={style.homeContainer}>
-          <img src="../src/imgs/HomepagePicture.jpeg"></img>
+          <img src="./imgs/HomepagePicture.jpeg"></img>
           <div className={style.textContainer}>
             <h1>The fastest and easiest way to order food</h1>
             <p>Choose the food you want to eat and we take care of the rest!</p>

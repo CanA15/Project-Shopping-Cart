@@ -22,7 +22,7 @@ function Header({ cart }) {
       </div>
       <div className={style.cart}>
         <Link to="/Cart" className={style.cartLink}>
-          <img src="../src/icons/shopping-bag.svg" alt="Shopping bag" />
+          <img src="./icons/shopping-bag.svg" alt="Shopping bag" />
           {cartItemCount > 0 && (
             <span className={style.cartCount}>{cartItemCount}</span>
           )}

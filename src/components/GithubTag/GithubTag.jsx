@@ -8,7 +8,7 @@ function GithubTag() {
         href="https://github.com/CanA15/Project-Shopping-Cart"
         rel="noopener noreferrer"
       >
-        <img src="../src/icons/github-mark.svg" alt="My github profile"></img>
+        <img src="./icons/github-mark.svg" alt="My github profile"></img>
       </a>
     </div>
   );

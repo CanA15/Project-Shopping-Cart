@@ -29,7 +29,7 @@ function Store() {
                 >
                   <img
                     className={styles.cartIcon}
-                    src="../src/icons/shopping-bag.svg"
+                    src="./icons/shopping-bag.svg"
                     alt="Add to cart"
                   />
                 </button>
