@@ -2,6 +2,7 @@ import App from "./App";
 import Store from "./components/Store/Store";
 import Homepage from "./components/Homepage/Homepage";
 import Cart from "./components/Cart/Cart";
+import Error from "./components/ErrorPage/Error";
 
 const routes = [
   {
@@ -12,6 +13,7 @@ const routes = [
       { path: "store/", element: <Store /> },
       { path: "cart/", element: <Cart /> },
     ],
+    errorElement: <Error />,
   },
 ];
 
