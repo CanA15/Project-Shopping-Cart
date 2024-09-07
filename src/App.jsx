@@ -1,12 +1,10 @@
-import Homepage from "./components/Homepage/Homepage";
 import "./App.css";
-import GithubTag from "./components/GithubTag/GithubTag";
+import ContextProvider from "./components/ContextProvider/ContextProvider";
 
 function App() {
   return (
     <>
-      <Homepage />
-      <GithubTag />
+      <ContextProvider />
     </>
   );
 }

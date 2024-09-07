@@ -1,0 +1,143 @@
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imageContainer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+
+.productImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.productInfo {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+.productSize {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* This pushes the container to the bottom of the card */
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.addToCartButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem; /* Set a fixed width */
+  height: 2rem;
+}
+
+.cartIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .imageContainer {
+    height: 150px;
+  }
+  .productName {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .imageContainer {
+    height: 150px;
+  }
+  .productName {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .imageContainer {
+    height: 30vh;
+  }
+  .productName {
+    font-size: 2rem;
+  }
+  .productSize {
+    font-size: 1.6rem;
+  }
+  .price {
+    font-size: 1.8rem;
+  }
+  .cartIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+}

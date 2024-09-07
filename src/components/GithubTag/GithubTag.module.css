@@ -8,9 +8,11 @@
 .githubProfile img {
   width: 4vw;
   height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .githubProfile img {
     width: 8vw;
     height: auto;

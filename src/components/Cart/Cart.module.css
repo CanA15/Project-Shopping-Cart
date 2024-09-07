@@ -1,0 +1,107 @@
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.itemInfo {
+  flex-grow: 1;
+}
+
+.itemInfoTitle {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.quantityControl button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+
+.removeItemButton {
+  color: rgb(255, 0, 0);
+  border: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 2rem;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.totalText {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90vw;
+  }
+
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .itemImage {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .itemInfoTitle {
+    font-size: 2rem;
+  }
+
+  .quantityControl button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+
+  .total {
+    font-size: 2rem;
+  }
+}
